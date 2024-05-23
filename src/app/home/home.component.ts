@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
-
+import { CommonModule } from '@angular/common';
+import { Component, NgModule } from '@angular/core';
+import { RouterLink, RouterModule } from '@angular/router';
+import { GaleriaComponent } from '../galeria/galeria.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterLink, GaleriaComponent, SlickCarouselModule, GaleriaComponent, RouterModule], 
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
