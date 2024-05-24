@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './simulador.component.html',
-  styleUrl: './simulador.component.css'
+  styleUrl: './simulador.component.scss'
 })
 export class SimuladorComponent {
 
