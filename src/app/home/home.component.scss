@@ -1,6 +1,37 @@
 .carousel-caption{
     display: flex;
     justify-content: center;
-    top: 40%;
+    top: 30%;
     color: white;
 }
+
+.slider-header{
+    animation-duration: 2s;
+    animation-name: slidein;
+    font-size: 50px;
+}
+
+@keyframes slidein{
+    from {
+        margin-top: 100%;
+      }
+    
+      to {
+        margin-top: 0%;
+      }
+}
+
+.carousel-inner{
+    height: 700px;
+}
+
+.slider-header-1{
+    color: #426B1F;
+}
+
+.slider-header-1{
+    animation-duration: 2s;
+    animation-name: slidein;
+    font-size: 30px;
+}
+
