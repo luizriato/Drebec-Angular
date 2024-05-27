@@ -1,0 +1,62 @@
+.social-box{
+    background-color: rgb(228, 228, 228);
+}
+.social-box .box {
+    background: #FFF;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 20px 0;
+    padding: 40px 10px;
+    transition: all 0.5s ease-out;
+}
+
+.social-box .box:hover {
+    box-shadow: 0 0 6px #4183D7;
+}
+
+.social-box .box-text {
+    font-size: 15px;
+    line-height: 30px;
+    margin: 20px 0;
+}
+
+.social-box .box-btn a {
+    color: #4183D7;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.social-box .fa {
+    color: #4183D7;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h1 {
+    margin-bottom: 40px;
+}
+
+label {
+    color: #333;
+}
+
+.btn-send {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 80%;
+    margin-left: 3px;
+}
+
+.help-block.with-errors {
+    color: #668a47;
+    margin-top: 5px;
+
+}
+
+.card {
+    margin-left: 10px;
+    margin-right: 10px;
+}
