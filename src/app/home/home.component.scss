@@ -35,3 +35,16 @@
     font-size: 30px;
 }
 
+@media (min-width: 1400px) {
+    .carousel-inner{
+        width: auto;
+        height: auto;
+    }
+    .carousel-caption{
+        display: flex;
+        justify-content: center;
+        top: 30%;
+        color: white;
+    }
+
+}
