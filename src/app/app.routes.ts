@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { TesteComponent } from './teste/teste.component';
 import { ContatosComponent } from './contatos/contatos.component';
+import { CadastroComponent } from './cadastro/cadastro.component';
 
 export const routes: Routes = [{path: 'simulador', component: SimuladorComponent},
 {path: 'sobre', component: AboutUsComponent},
@@ -13,5 +14,6 @@ export const routes: Routes = [{path: 'simulador', component: SimuladorComponent
 {path: 'login', component: LoginComponent},
 {path: 'home', component: HomeComponent},
 {path: 'teste', component: TesteComponent},
-{path: 'contatos', component: ContatosComponent}
+{path: 'contatos', component: ContatosComponent},
+{path: 'cadastro', component: CadastroComponent}
 ];
