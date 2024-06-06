@@ -1,0 +1,12 @@
+{
+  "routes": [
+    "/",
+    "/cadastro",
+    "/contatos",
+    "/home",
+    "/login",
+    "/simulador",
+    "/sobre",
+    "/teste"
+  ]
+}
