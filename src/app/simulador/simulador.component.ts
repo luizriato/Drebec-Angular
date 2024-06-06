@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 @Component({
@@ -8,7 +8,7 @@ import {MatCardModule} from '@angular/material/card';
   templateUrl: './simulador.component.html',
   styleUrl: './simulador.component.scss'
 })
-export class SimuladorComponent {
+export class SimuladorComponent implements OnInit {
   solar: boolean = false;
   eolica: boolean = false;
   biomassa: boolean = false;
@@ -40,7 +40,9 @@ export class SimuladorComponent {
       }
     }
   }
-
+ngOnInit(): void {
+    
+}
   resetFlags(): void {
     this.solar = false;
     this.eolica = false;
