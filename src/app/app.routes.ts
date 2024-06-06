@@ -8,7 +8,8 @@ import { TesteComponent } from './teste/teste.component';
 import { ContatosComponent } from './contatos/contatos.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 
-export const routes: Routes = [{path: 'simulador', component: SimuladorComponent},
+export const routes: Routes = [
+{path: 'simulador', component: SimuladorComponent},
 {path: 'sobre', component: AboutUsComponent},
 {path: '', component: HomeComponent},
 {path: 'login', component: LoginComponent},

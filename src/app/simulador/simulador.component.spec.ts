@@ -21,3 +21,5 @@ describe('SimuladorComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+
+

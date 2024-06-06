@@ -52,7 +52,7 @@
 @media (min-width: 768px) {
     .carousel-inner{
         width: auto;
-        height: auto;
+        height: 500px;
     }
     .carousel-caption{
         display: flex;
@@ -85,7 +85,7 @@
     .carousel-caption{
         display: flex;
         justify-content: center;
-        top: 30%;
+        top: 40%;
         color: white;
     }
 
