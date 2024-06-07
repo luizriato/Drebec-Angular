@@ -9,9 +9,9 @@ import {MatCardModule} from '@angular/material/card';
   styleUrl: './simulador.component.scss'
 })
 export class SimuladorComponent implements OnInit {
-  solar: boolean = false;
-  eolica: boolean = false;
-  biomassa: boolean = false;
+  public solar: boolean = false;
+  public eolica: boolean = false;
+  public biomassa: boolean = false;
 
   alterarVisibilidade(tamanho: string, tipo: string): void {
     this.resetFlags();
