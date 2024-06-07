@@ -7,6 +7,7 @@ import { LoginComponent } from './login/login.component';
 import { TesteComponent } from './teste/teste.component';
 import { ContatosComponent } from './contatos/contatos.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
+import { CadastroEmpresaComponent } from './cadastro-empresa/cadastro-empresa.component';
 
 export const routes: Routes = [
 {path: 'simulador', component: SimuladorComponent},
@@ -16,5 +17,6 @@ export const routes: Routes = [
 {path: 'home', component: HomeComponent},
 {path: 'teste', component: TesteComponent},
 {path: 'contatos', component: ContatosComponent},
-{path: 'cadastro', component: CadastroComponent}
+{path: 'cadastro', component: CadastroComponent},
+{path: 'cadastro-empresa', component: CadastroEmpresaComponent}
 ];
