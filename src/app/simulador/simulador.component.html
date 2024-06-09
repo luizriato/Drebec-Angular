@@ -1,149 +1,79 @@
-<br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
 <main class="d-flex flex-column justify-content-center w-100">
-    <form>
-      <div class="titulo">
-        <br>Simulador<br>
-      </div>
-      <br>
-      <div class="container text-center">
-        <div class="row align-items-start">
-          <div class="col">
-            <mat-card class="example-card">
-              <mat-card-header>
-                <mat-card-title>Casa</mat-card-title>
-              </mat-card-header>
-              <img mat-card-image src="../assets/images/casa.jpg" alt="foto de casa">
-              <mat-card-content>
-                <p>
-                  Selecione o tamanho da residência através dos botões abaixo para obter a forma de obtenção de energia limpa mais indicada para você!
-                </p>
-              </mat-card-content>
-              <mat-card-actions>
-                <button mat-button></button>
-                <button mat-flat-button (click)="alterarVisibilidade('pequena', 'casa')" color="accent">PEQUENA</button>
-                <button mat-flat-button (click)="alterarVisibilidade('media', 'casa')" color="accent">MÉDIA</button>
-                <button mat-flat-button (click)="alterarVisibilidade('grande', 'casa')" color="accent">GRANDE</button>
-                <button mat-button></button>
-              </mat-card-actions>
-            </mat-card>
-          </div>
-          <div class="col">
-            <mat-card class="example-card">
-              <mat-card-header>
-                <mat-card-title>Apartamento</mat-card-title>
-              </mat-card-header>
-              <img mat-card-image src="../assets/images/apartamento.jpg" alt="foto de apartamento">
-              <mat-card-content>
-                <p>
-                  Selecione o tamanho do imóvel através dos botões abaixo para obter a forma de obtenção de energia limpa mais indicada para você!
-                </p>
-              </mat-card-content>
-              <mat-card-actions>
-                <button mat-button></button>
-                <button mat-flat-button (click)="alterarVisibilidade('pequena', 'apartamento')" color="accent">PEQUENA</button>
-                <button mat-flat-button (click)="alterarVisibilidade('media', 'apartamento')" color="accent">MÉDIA</button>
-                <button mat-flat-button (click)="alterarVisibilidade('grande', 'apartamento')" color="accent">GRANDE</button>
-                <button mat-button></button>
-              </mat-card-actions>
-            </mat-card>
-          </div>
-          <div class="col">
-            <mat-card class="example-card">
-              <mat-card-header>
-                <mat-card-title>Área Rural</mat-card-title>
-              </mat-card-header>
-              <img mat-card-image src="../assets/images/sitio.jpg" alt="foto de área rural">
-              <mat-card-content>
-                <p>
-                  Selecione o tamanho da propriedade através dos botões abaixo para obter a forma de obtenção de energia limpa mais indicada para você!
-                </p>
-              </mat-card-content>
-              <mat-card-actions>
-                <button mat-button></button>
-                <button mat-flat-button (click)="alterarVisibilidade('pequena', 'rural')" color="accent">PEQUENA</button>
-                <button mat-flat-button (click)="alterarVisibilidade('media', 'rural')" color="accent">MÉDIA</button>
-                <button mat-flat-button (click)="alterarVisibilidade('grande', 'rural')" color="accent">GRANDE</button>
-                <button mat-button></button>
-              </mat-card-actions>
-            </mat-card>
-          </div>
-        </div>
-      </div>
-    </form>
-    <br><br><br>
-    <div class="titulo">Confira abaixo o resultado:
-      <br><br>
-      <div class="container-energias-calculadas row" [class.d-none]="!solar && !eolica && !biomassa" id="resultado-calculadora">
-        <div id="resultado-eolica" class="card col-md-3 resultado-card" [class.d-none]="!eolica">
-          <img src="../assets/images/eolica.jpeg" alt="energia eólica" width="300" height="180" class="image rounded" />
-          <div class="card-body">
-            <h5 class="card-title">Energia Eólica</h5>
-            <p class="card-text">
-              A energia eólica é a energia obtida através do vento, é considerada uma fonte de energia limpa e renovável.
-            </p>
-            <hr />
-            <p class="card-text">
-              Se você tiver um espaço de 1.000m² com ventos constantes de 20km/h, você pode gerar 5.000 kWh por ano.
-            </p>
-            <hr />
-            <div class="card-text">
-              Confira os nossos parceiros:
-              <ul>
-                <li>
-                  <a href="https://deltaenergia.com.br">Delta</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div id="resultado-solar" class="card col-md-3 resultado-card" [class.d-none]="!solar">
-          <img src="../assets/images/solar.jpeg" alt="energia solar" width="300" height="180" class="image rounded" />
-          <div class="card-body">
-            <h5 class="card-title">Energia Solar</h5>
-            <p class="card-text">
-              A energia solar é uma fonte de energia renovável obtida através da luz do sol, pode ser convertida em energia térmica ou elétrica.
-            </p>
-            <hr />
-            <p class="card-text">
-              Se você tiver um telhado ou espaço que receba sol constante com uma área de 50m², você pode gerar 5.000 kWh por ano.
-            </p>
-            <hr />
-            <div class="card-text">
-              Confira os nossos parceiros:
-              <ul>
-                <li>
-                  <a href="https://solar.huawei.com/br/">Huawei Solar</a>
-                </li>
-                <li>
-                  <a href="https://neosolar.com.br">Neosolar</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div id="resultado-biomassa" class="card col-md-3 resultado-card" [class.d-none]="!biomassa">
-          <img src="../assets/images/biomassa.jpeg" alt="energia biomassa" width="300" height="180" class="image rounded" />
-          <div class="card-body">
-            <h5 class="card-title">Energia Biomassa</h5>
-            <p class="card-text">
-              A energia da biomassa é obtida através da matéria orgânica, como restos de madeira, bagaço de cana-de-açúcar, entre outros resíduos.
-            </p>
-            <hr />
-            <p class="card-text">
-              Se você tiver um espaço de 1.000m² com uma produção de 5T de biomassa por ano, você pode gerar 5.000 kWh por ano.
-            </p>
-            <hr />
-            <div class="card-text">
-              Confira os nossos parceiros:
-              <ul>
-                <li>
-                  <a href="https://tradener.com.br">Tradener</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+
+  <div class="titulo">
+    <br>Simulador<br> 
+  </div>
+  <br>
+
+  <br><br><br>
+  <div class="row">
+    <div class="col">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Casa</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="../assets/images/casa.jpg" alt="Foto de casa">
+        <mat-card-content>
+          <p>
+            Selecione o tamanho da residência através dos botões abaixo para obter a
+            forma de obtenção de energia limpa mais indicada para você!
+          </p>
+        </mat-card-content>
+        <mat-card-actions class="botoes">
+          <button mat-button (click)="openDialog()" color="accent">PEQUENO</button>
+          <button mat-button (click)="openDialog()" color="accent">MÉDIO</button>
+          <button mat-button (click)="openDialog()" color="accent">GRANDE</button>
+        </mat-card-actions>
+      </mat-card>
     </div>
-  </main>
-  
+
+    <div class="col">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Apartamento</mat-card-title>
+        </mat-card-header>
+        <img mat-card-image src="../assets/images/apartamento.jpg" alt="Foto de apartamento">
+        <mat-card-content>
+          <p>
+            Selecione o tamanho do imóvel através dos botões abaixo para obter a forma de obtenção
+            de energia limpa mais indicada para você!
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="openDialog()" color="accent">PEQUENO</button>
+          <button mat-button (click)="openDialog()" color="accent">MÉDIO</button>
+          <button mat-button (click)="openDialog()" color="accent">GRANDE</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+
+    <div class="col">
+      <mat-card class="example-card">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>Shiba Inu</mat-card-title>
+          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="../assets/images/sitio.jpg" alt="Foto de área rural">
+        <mat-card-content>
+          <p>
+            A energia da biomassa é obtida através da matéria orgânica, como restos de madeira, bagaço de
+            cana-de-açúcar,
+            entre outros resíduos
+          </p>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button (click)="openDialog()" color="accent">PEQUENO</button>
+          <button mat-button (click)="openDialog()" color="accent">MÉDIO</button>
+          <button mat-button (click)="openDialog()" color="accent">GRANDE</button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+
+  <br><br>
+
+</main>
