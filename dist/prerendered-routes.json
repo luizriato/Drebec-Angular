@@ -2,6 +2,7 @@
   "routes": [
     "/",
     "/cadastro",
+    "/cadastro-empresa",
     "/contatos",
     "/home",
     "/login",
