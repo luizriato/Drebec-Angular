@@ -1,19 +1,27 @@
 @import '@angular/material/prebuilt-themes/purple-green.css';
 
   .example-card {
-    max-width: 300px;
-    background-color: rgb(247, 247, 247);
+    max-width: 400px;
+    background-color:   white;
+    margin-bottom: 2rem;
+    border: 2px solid rgb(255, 250, 250);
+    transition: box-shadow 0.3s ease;
+    color: #426B1F;
+    font-style: Nunito;
   }
+
   
   .example-header-image {
     background-size: cover;
+    text-align: center;
   }
 
   .titulo{
     text-align: center;
-    font-size: 25px;
+    font-size: 45px;
+    color: #426B1F;
   }
-
+s
   .container-energias-calculadas{
     display: flex;
     justify-content: space-evenly;
@@ -27,3 +35,23 @@
     display: flex;
     justify-content: center;
   }
+
+  mat-card-header {
+    display: flex;
+    justify-content: center;
+    text-align: center;  
+}
+.example-card:hover {
+  box-shadow: 0 4px 12px rgba(108, 169, 38, 50.5); /* Sombra quando passar o mouse */
+}
+
+.custom-button.custom-button {
+  background-color: #f3f6f4; 
+  color: #426B1F; /* Cor do texto */
+ }
+
+.custom-button:hover {
+  background-color: #426B1F; /* Mudança de cor ao passar o mouse */
+  color: #fff;
+}
+
