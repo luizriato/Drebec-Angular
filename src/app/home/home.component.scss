@@ -35,7 +35,7 @@
     font-size: 30px;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 300px) {
     .carousel-inner{
         width: auto;
         height: auto;
@@ -43,7 +43,7 @@
     .carousel-caption{
         display: flex;
         justify-content: center;
-        top: 30%;
+        top: 70%;
         color: white;
     }
 
