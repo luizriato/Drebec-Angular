@@ -8,9 +8,10 @@ import { TesteComponent } from './teste/teste.component';
 import { ContatosComponent } from './contatos/contatos.component';
 import { CadastroComponent } from './cadastro/cadastro.component';
 import { CadastroEmpresaComponent } from './cadastro-empresa/cadastro-empresa.component';
+import { autorizacaoGuard } from './guard/autorizacao.guard';
 
 export const routes: Routes = [
-{path: 'simulador', component: SimuladorComponent},
+{path: 'simulador', component: SimuladorComponent, canActivate: [autorizacaoGuard]},
 {path: 'sobre', component: AboutUsComponent},
 {path: '', component: HomeComponent},
 {path: 'login', component: LoginComponent},
