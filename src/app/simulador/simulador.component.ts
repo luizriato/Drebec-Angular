@@ -2,11 +2,14 @@ import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
+import {ViewEncapsulation} from '@angular/core';
+import {MatTooltipModule} from '@angular/material/tooltip';
+
 
 @Component({
   selector: 'app-simulador',
   standalone: true,
-  imports: [MatCardModule, MatButtonModule, MatDialogModule],
+  imports: [MatCardModule, MatButtonModule, MatDialogModule, MatTooltipModule],
   templateUrl: './simulador.component.html',
   styleUrl: './simulador.component.scss'
 })

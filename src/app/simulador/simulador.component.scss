@@ -1,7 +1,7 @@
 @import '@angular/material/prebuilt-themes/purple-green.css';
 
   .example-card {
-    max-width: 400px;
+    max-width: 300px;
     background-color:   white;
     margin-bottom: 2rem;
     border: 2px solid rgb(255, 250, 250);
@@ -66,4 +66,12 @@ s
   border-radius: 4px;
   padding: 8px;
   text-align: center;
+}
+
+.example-button {
+  margin-top: 16px;
+}
+
+.example-tooltip-uppercase {
+  text-transform: uppercase;
 }
