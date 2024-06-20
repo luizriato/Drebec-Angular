@@ -45,4 +45,15 @@
   transform: scale(0.1, 1);
 }
 
+.custom-btn {
+  color: #426B1F;
+  background-color: white;
+  border-color: #426B1F; 
+}
+
+.custom-btn:hover {
+  color: white;
+  background-color: #426B1F;
+  border-color: #426B1F; 
+}
 
